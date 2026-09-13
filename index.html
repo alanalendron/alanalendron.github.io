@@ -84,7 +84,9 @@
 
     .floating-heart{
         position:absolute;
-        color:#ff6ad5;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
         animation:floatUp linear forwards;
         pointer-events:none;
     }
@@ -163,11 +165,11 @@ function chuvaDeCoracoes(){
 
     for(let i=0;i<40;i++){
 
-        const heart = document.createElement("div");
+        const heart = document.createElement("img");
 
         heart.classList.add("floating-heart");
 
-        heart.innerHTML = "❤";
+        heart.src = url('https://play-lh.googleusercontent.com/yHwgV_50VEro9qUK84UCyMh16DqLizUJlzY_9-WuK9ZYegts9t8gX6Gkh3EvciS8gHLwOj-Qmc7bRAKg2IH4=w240-h480-rw');
 
         heart.style.left = Math.random() * window.innerWidth + "px";
 
